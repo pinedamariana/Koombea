@@ -2,9 +2,9 @@
 ## Technical Test
 
 Se diseña una estrategia de pruebas para la API https://rickandmortyapi.com/ con los servicios:
-<sub>● Characters.</sub>
-● Location.
-● Episode.
+- Characters.
+* Location.
++ Episode.
 
 Teniendo en cuenta las principales validaciones:
 ● Status code.
