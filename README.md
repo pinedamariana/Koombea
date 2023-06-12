@@ -2,7 +2,7 @@
 ## Technical Test
 
 Se diseña una estrategia de pruebas para la API https://rickandmortyapi.com/ con los servicios:
-● Characters.
+<sub>● Characters.</sub>
 ● Location.
 ● Episode.
 
