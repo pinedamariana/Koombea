@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"cde172c9-100b-4ba9-be35-22ff77ba80c5",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tests.GetLocationsMultiple</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-12 02:54:28 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:13]"><span>[1.1:13]</span> <span>TC_029_Validate_LocationMultiple_statuscode Locations found</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:14]"><span>[1.2:14]</span> <span>TC_029_Validate_LocationMultiple_statuscode Locations found</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:15]"><span>[1.3:15]</span> <span>TC_029_Validate_LocationMultiple_statuscode Failed for value</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>TC_030_Validate_LocationMultiple__responseHeader</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:24]"><span>[3:24]</span> <span>TC_031_Validate_LocationMultiple_Response Payload</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tests/GetLocationsMultiple.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test The Rick and Morty API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:13]</span>
+                <span class="scenario-name">TC_029_Validate_LocationMultiple_statuscode Locations found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>475</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/location/4, 8, 8888&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">475</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">14:54:26.267 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/4,%208,%208888
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:26.741 response time in milliseconds: 350
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:26 GMT
+1 &lt; Etag: W/&quot;504-Km96BjGKFE/aXEHk1SlxdHfNKE8&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:26 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJS303EENCVEHCQSKGMR1D
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:4,&quot;name&quot;:&quot;Worldender&#39;s lair&quot;,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/10&quot;,&quot;https://rickandmortyapi.com/api/character/81&quot;,&quot;https://rickandmortyapi.com/api/character/208&quot;,&quot;https://rickandmortyapi.com/api/character/226&quot;,&quot;https://rickandmortyapi.com/api/character/340&quot;,&quot;https://rickandmortyapi.com/api/character/362&quot;,&quot;https://rickandmortyapi.com/api/character/375&quot;,&quot;https://rickandmortyapi.com/api/character/382&quot;,&quot;https://rickandmortyapi.com/api/character/395&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/4&quot;,&quot;created&quot;:&quot;2017-11-10T13:08:20.569Z&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Post-Apocalyptic Earth&quot;,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Post-Apocalyptic Dimension&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/25&quot;,&quot;https://rickandmortyapi.com/api/character/52&quot;,&quot;https://rickandmortyapi.com/api/character/68&quot;,&quot;https://rickandmortyapi.com/api/character/110&quot;,&quot;https://rickandmortyapi.com/api/character/111&quot;,&quot;https://rickandmortyapi.com/api/character/140&quot;,&quot;https://rickandmortyapi.com/api/character/156&quot;,&quot;https://rickandmortyapi.com/api/character/228&quot;,&quot;https://rickandmortyapi.com/api/character/323&quot;,&quot;https://rickandmortyapi.com/api/character/342&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/8&quot;,&quot;created&quot;:&quot;2017-11-10T13:09:22.551Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:14]</span>
+                <span class="scenario-name">TC_029_Validate_LocationMultiple_statuscode Locations found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>548</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/location/4, 8, &#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">548</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.8">14:54:26.745 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/4,%208,%20
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:27.292 response time in milliseconds: 419
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:27 GMT
+1 &lt; Etag: W/&quot;55b-stQDj/V6vSD2zNU4BlcHk+5adtw&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:27 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJS3GHR7YNYTXQ7WYPBJE7
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:0,&quot;name&quot;:&quot;unknown&quot;,&quot;residents&quot;:[],&quot;url&quot;:&quot;&quot;,&quot;created&quot;:&quot;2018-01-11T17:11:26.574Z&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Worldender&#39;s lair&quot;,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/10&quot;,&quot;https://rickandmortyapi.com/api/character/81&quot;,&quot;https://rickandmortyapi.com/api/character/208&quot;,&quot;https://rickandmortyapi.com/api/character/226&quot;,&quot;https://rickandmortyapi.com/api/character/340&quot;,&quot;https://rickandmortyapi.com/api/character/362&quot;,&quot;https://rickandmortyapi.com/api/character/375&quot;,&quot;https://rickandmortyapi.com/api/character/382&quot;,&quot;https://rickandmortyapi.com/api/character/395&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/4&quot;,&quot;created&quot;:&quot;2017-11-10T13:08:20.569Z&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Post-Apocalyptic Earth&quot;,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Post-Apocalyptic Dimension&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/25&quot;,&quot;https://rickandmortyapi.com/api/character/52&quot;,&quot;https://rickandmortyapi.com/api/character/68&quot;,&quot;https://rickandmortyapi.com/api/character/110&quot;,&quot;https://rickandmortyapi.com/api/character/111&quot;,&quot;https://rickandmortyapi.com/api/character/140&quot;,&quot;https://rickandmortyapi.com/api/character/156&quot;,&quot;https://rickandmortyapi.com/api/character/228&quot;,&quot;https://rickandmortyapi.com/api/character/323&quot;,&quot;https://rickandmortyapi.com/api/character/342&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/8&quot;,&quot;created&quot;:&quot;2017-11-10T13:09:22.551Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:15]</span>
+                <span class="scenario-name">TC_029_Validate_LocationMultiple_statuscode Failed for value</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>414</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/location/4, 8, mmmm&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">414</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.8">14:54:27.295 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/4,%208,%20mmmm
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:27.708 response time in milliseconds: 412
+1 &lt; 500
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Content-Length: 89
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:27 GMT
+1 &lt; Etag: W/&quot;59-5WMxnC8C9UMajeFX+gUB6aQ6k1s&quot;
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01H2RJS419694CN7QC44E7FNAQ
+1 &lt; X-Powered-By: Express
+{&quot;error&quot;:&quot;Cast to Number failed for value \&quot;NaN\&quot; at path \&quot;id\&quot; for model \&quot;Location\&quot;&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">TC_030_Validate_LocationMultiple__responseHeader</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>363</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/location/2,6,9&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">361</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">14:54:27.711 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/2,6,9
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:28.071 response time in milliseconds: 359
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:28 GMT
+1 &lt; Etag: W/&quot;e99-ZJGE4Ecz9RkQlWc47mfRYQAKaAU&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:28 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJS4DJA0MAJAT7ZAFZ8Z06
+1 &lt; X-Powered-By: Express
+1 &lt; Transfer-Encoding: chunked
+[{&quot;id&quot;:2,&quot;name&quot;:&quot;Abadango&quot;,&quot;type&quot;:&quot;Cluster&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/6&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/2&quot;,&quot;created&quot;:&quot;2017-11-10T13:06:38.182Z&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;type&quot;:&quot;TV&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/20&quot;,&quot;https://rickandmortyapi.com/api/character/28&quot;,&quot;https://rickandmortyapi.com/api/character/29&quot;,&quot;https://rickandmortyapi.com/api/character/34&quot;,&quot;https://rickandmortyapi.com/api/character/49&quot;,&quot;https://rickandmortyapi.com/api/character/51&quot;,&quot;https://rickandmortyapi.com/api/character/54&quot;,&quot;https://rickandmortyapi.com/api/character/121&quot;,&quot;https://rickandmortyapi.com/api/character/126&quot;,&quot;https://rickandmortyapi.com/api/character/129&quot;,&quot;https://rickandmortyapi.com/api/character/134&quot;,&quot;https://rickandmortyapi.com/api/character/136&quot;,&quot;https://rickandmortyapi.com/api/character/145&quot;,&quot;https://rickandmortyapi.com/api/character/157&quot;,&quot;https://rickandmortyapi.com/api/character/173&quot;,&quot;https://rickandmortyapi.com/api/character/184&quot;,&quot;https://rickandmortyapi.com/api/character/205&quot;,&quot;https://rickandmortyapi.com/api/character/207&quot;,&quot;https://rickandmortyapi.com/api/character/214&quot;,&quot;https://rickandmortyapi.com/api/character/222&quot;,&quot;https://rickandmortyapi.com/api/character/223&quot;,&quot;https://rickandmortyapi.com/api/character/224&quot;,&quot;https://rickandmortyapi.com/api/character/225&quot;,&quot;https://rickandmortyapi.com/api/character/250&quot;,&quot;https://rickandmortyapi.com/api/character/254&quot;,&quot;https://rickandmortyapi.com/api/character/260&quot;,&quot;https://rickandmortyapi.com/api/character/264&quot;,&quot;https://rickandmortyapi.com/api/character/266&quot;,&quot;https://rickandmortyapi.com/api/character/275&quot;,&quot;https://rickandmortyapi.com/api/character/277&quot;,&quot;https://rickandmortyapi.com/api/character/279&quot;,&quot;https://rickandmortyapi.com/api/character/312&quot;,&quot;https://rickandmortyapi.com/api/character/314&quot;,&quot;https://rickandmortyapi.com/api/character/315&quot;,&quot;https://rickandmortyapi.com/api/character/316&quot;,&quot;https://rickandmortyapi.com/api/character/317&quot;,&quot;https://rickandmortyapi.com/api/character/318&quot;,&quot;https://rickandmortyapi.com/api/character/334&quot;,&quot;https://rickandmortyapi.com/api/character/351&quot;,&quot;https://rickandmortyapi.com/api/character/358&quot;,&quot;https://rickandmortyapi.com/api/character/367&quot;,&quot;https://rickandmortyapi.com/api/character/370&quot;,&quot;https://rickandmortyapi.com/api/character/373&quot;,&quot;https://rickandmortyapi.com/api/character/403&quot;,&quot;https://rickandmortyapi.com/api/character/406&quot;,&quot;https://rickandmortyapi.com/api/character/407&quot;,&quot;https://rickandmortyapi.com/api/character/408&quot;,&quot;https://rickandmortyapi.com/api/character/409&quot;,&quot;https://rickandmortyapi.com/api/character/410&quot;,&quot;https://rickandmortyapi.com/api/character/411&quot;,&quot;https://rickandmortyapi.com/api/character/412&quot;,&quot;https://rickandmortyapi.com/api/character/413&quot;,&quot;https://rickandmortyapi.com/api/character/414&quot;,&quot;https://rickandmortyapi.com/api/character/415&quot;,&quot;https://rickandmortyapi.com/api/character/416&quot;,&quot;https://rickandmortyapi.com/api/character/417&quot;,&quot;https://rickandmortyapi.com/api/character/418&quot;,&quot;https://rickandmortyapi.com/api/character/457&quot;,&quot;https://rickandmortyapi.com/api/character/458&quot;,&quot;https://rickandmortyapi.com/api/character/459&quot;,&quot;https://rickandmortyapi.com/api/character/709&quot;,&quot;https://rickandmortyapi.com/api/character/711&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/6&quot;,&quot;created&quot;:&quot;2017-11-10T13:09:09.102Z&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;Purge Planet&quot;,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/26&quot;,&quot;https://rickandmortyapi.com/api/character/139&quot;,&quot;https://rickandmortyapi.com/api/character/202&quot;,&quot;https://rickandmortyapi.com/api/character/273&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/9&quot;,&quot;created&quot;:&quot;2017-11-10T13:09:29.566Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match karate.response.header(&#39;content-type&#39;) == &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match karate.response.header(&#39;Vary&#39;) == &#39;Accept-Encoding&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:24]</span>
+                <span class="scenario-name">TC_031_Validate_LocationMultiple_Response Payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>362</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/location/2,89,125&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def reqBody = read(&quot;data6.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">360</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">14:54:28.078 request:
+1 &gt; GET https://rickandmortyapi.com/api/location/2,89,125
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:28.436 response time in milliseconds: 357
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Length: 998
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:28 GMT
+1 &lt; Etag: W/&quot;3e6-VJuivQyy3Q2jhO1E+s8XDTUW2Gc&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:28 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Nf-Request-Id: 01H2RJS4RSE4Z1Q3HACAPCBSQQ
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:2,&quot;name&quot;:&quot;Abadango&quot;,&quot;type&quot;:&quot;Cluster&quot;,&quot;dimension&quot;:&quot;unknown&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/6&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/2&quot;,&quot;created&quot;:&quot;2017-11-10T13:06:38.182Z&quot;},{&quot;id&quot;:89,&quot;name&quot;:&quot;Heistotron Base&quot;,&quot;type&quot;:&quot;Space station&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/554&quot;,&quot;https://rickandmortyapi.com/api/character/555&quot;,&quot;https://rickandmortyapi.com/api/character/556&quot;,&quot;https://rickandmortyapi.com/api/character/557&quot;,&quot;https://rickandmortyapi.com/api/character/558&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/89&quot;,&quot;created&quot;:&quot;2020-05-07T10:11:40.632Z&quot;},{&quot;id&quot;:125,&quot;name&quot;:&quot;Rick and Two Crows Planet&quot;,&quot;type&quot;:&quot;Planet&quot;,&quot;dimension&quot;:&quot;Replacement Dimension&quot;,&quot;residents&quot;:[&quot;https://rickandmortyapi.com/api/character/809&quot;,&quot;https://rickandmortyapi.com/api/character/808&quot;,&quot;https://rickandmortyapi.com/api/character/787&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/125&quot;,&quot;created&quot;:&quot;2021-11-02T13:50:55.588Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $ == reqBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $[0] != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $[1] != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $[2] != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

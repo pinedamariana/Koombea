@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"cde172c9-100b-4ba9-be35-22ff77ba80c5",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>tests.GetCharactersbyFilter</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-06-12 02:54:11 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>TC_006_Validate_Character_by filter female &amp; dead_statuscode</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>TC_007_Validate_Character_by filter female &amp; dead_responseTime</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:22]"><span>[3:22]</span> <span>TC_008_Validate_Character_by filter female &amp; dead__responseHeader</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:30]"><span>[4:30]</span> <span>TC_009_Validate_Character_by filter female &amp; dead_Response Payload</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tests/GetCharactersbyFilter.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test The Rick and Morty API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">TC_006_Validate_Character_by filter female &amp; dead_statuscode</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>419</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {gender:&#39;female&#39;, status:&#39;dead&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/character&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">414</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">14:54:10.033 request:
+1 &gt; GET https://rickandmortyapi.com/api/character?gender=female&amp;status=dead
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:10.442 response time in milliseconds: 406
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:10 GMT
+1 &lt; Etag: W/&quot;2674-w12ETQ+E3qM5KygqyxxhsEtkozA&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:10 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJRK6ABDN3XGXC9NDV303X
+1 &lt; X-Powered-By: Express
+1 &lt; Transfer-Encoding: chunked
+{&quot;info&quot;:{&quot;count&quot;:43,&quot;pages&quot;:3,&quot;next&quot;:&quot;https://rickandmortyapi.com/api/character?page=2&amp;gender=female&amp;status=dead&quot;,&quot;prev&quot;:null},&quot;results&quot;:[{&quot;id&quot;:32,&quot;name&quot;:&quot;Bearded Lady&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/32.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/32&quot;,&quot;created&quot;:&quot;2017-11-05T09:18:04.184Z&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Beth&#39;s Mytholog&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Mythological Creature&quot;,&quot;type&quot;:&quot;Mytholog&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/40.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/40&quot;,&quot;created&quot;:&quot;2017-11-05T10:02:26.701Z&quot;},{&quot;id&quot;:60,&quot;name&quot;:&quot;Calypso&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Superhuman&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/60.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/60&quot;,&quot;created&quot;:&quot;2017-11-05T11:52:45.852Z&quot;},{&quot;id&quot;:87,&quot;name&quot;:&quot;Cynthia&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Zigerion&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Zigerion&#39;s Base&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/46&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/87.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/4&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/87&quot;,&quot;created&quot;:&quot;2017-11-30T21:08:32.534Z&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;Diane Sanchez&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Rick&#39;s Memories&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/126&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/94.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/94&quot;,&quot;created&quot;:&quot;2017-12-01T11:49:43.929Z&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;Donna Gueterman&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Robot&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Planet Squanch&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/35&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/102.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/21&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/102&quot;,&quot;created&quot;:&quot;2017-12-01T12:21:21.357Z&quot;},{&quot;id&quot;:116,&quot;name&quot;:&quot;Evil Beth Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/116.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/116&quot;,&quot;created&quot;:&quot;2017-12-26T16:10:47.781Z&quot;},{&quot;id&quot;:120,&quot;name&quot;:&quot;Evil Summer Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/120.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/120&quot;,&quot;created&quot;:&quot;2017-12-26T16:24:02.059Z&quot;},{&quot;id&quot;:189,&quot;name&quot;:&quot;Katarina&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/189.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/24&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/189&quot;,&quot;created&quot;:&quot;2017-12-29T19:13:57.070Z&quot;},{&quot;id&quot;:198,&quot;name&quot;:&quot;Lady Katana&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Humanoid&quot;,&quot;type&quot;:&quot;Cyborg&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Dorian 5&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/29&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/198.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/198&quot;,&quot;created&quot;:&quot;2017-12-30T12:43:37.571Z&quot;},{&quot;id&quot;:204,&quot;name&quot;:&quot;Lisa&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/7&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/204.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/26&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/204&quot;,&quot;created&quot;:&quot;2017-12-30T12:59:58.460Z&quot;},{&quot;id&quot;:210,&quot;name&quot;:&quot;Lucy&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/210.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/210&quot;,&quot;created&quot;:&quot;2017-12-30T14:01:23.319Z&quot;},{&quot;id&quot;:248,&quot;name&quot;:&quot;Mrs. Refrigerator&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/248.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/248&quot;,&quot;created&quot;:&quot;2017-12-30T18:12:38.369Z&quot;},{&quot;id&quot;:250,&quot;name&quot;:&quot;Mrs. Sullivan&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Cat controlled dead lady&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-500A)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/23&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/6&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/250.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/8&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/250&quot;,&quot;created&quot;:&quot;2017-12-30T18:24:49.372Z&quot;},{&quot;id&quot;:344,&quot;name&quot;:&quot;Tammy Guetermann&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;NX-5 Planet Remover&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/105&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/344.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/344&quot;,&quot;created&quot;:&quot;2018-01-10T17:31:54.889Z&quot;},{&quot;id&quot;:352,&quot;name&quot;:&quot;Tinkles&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/352.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/352&quot;,&quot;created&quot;:&quot;2018-01-10T17:58:51.840Z&quot;},{&quot;id&quot;:386,&quot;name&quot;:&quot;Zarbadar Gloonch&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Drumbloxian&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/386.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/386&quot;,&quot;created&quot;:&quot;2018-01-10T19:52:40.898Z&quot;},{&quot;id&quot;:513,&quot;name&quot;:&quot;Judge&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/513.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/32&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/513&quot;,&quot;created&quot;:&quot;2020-05-02T12:27:08.223Z&quot;},{&quot;id&quot;:532,&quot;name&quot;:&quot;Tony’s Wife&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/532.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/33&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/532&quot;,&quot;created&quot;:&quot;2020-05-02T13:45:32.092Z&quot;},{&quot;id&quot;:596,&quot;name&quot;:&quot;Floaty Non-Gasm Brotherhood Member Friend&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Soulless Puppet&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/596.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/37&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/596&quot;,&quot;created&quot;:&quot;2020-08-06T11:31:40.334Z&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">14:54:10.447 [print] {
+  &quot;info&quot;: {
+    &quot;count&quot;: 43,
+    &quot;pages&quot;: 3,
+    &quot;next&quot;: &quot;https://rickandmortyapi.com/api/character?page=2&amp;gender=female&amp;status=dead&quot;,
+    &quot;prev&quot;: null
+  },
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: 32,
+      &quot;name&quot;: &quot;Bearded Lady&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Parasite&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/32.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/15&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/32&quot;,
+      &quot;created&quot;: &quot;2017-11-05T09:18:04.184Z&quot;
+    },
+    {
+      &quot;id&quot;: 40,
+      &quot;name&quot;: &quot;Beth&#39;s Mytholog&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Mythological Creature&quot;,
+      &quot;type&quot;: &quot;Mytholog&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Nuptia 4&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/13&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Nuptia 4&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/13&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/40.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/18&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/40&quot;,
+      &quot;created&quot;: &quot;2017-11-05T10:02:26.701Z&quot;
+    },
+    {
+      &quot;id&quot;: 60,
+      &quot;name&quot;: &quot;Calypso&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Superhuman&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/60.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/25&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/60&quot;,
+      &quot;created&quot;: &quot;2017-11-05T11:52:45.852Z&quot;
+    },
+    {
+      &quot;id&quot;: 87,
+      &quot;name&quot;: &quot;Cynthia&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Zigerion&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Zigerion&#39;s Base&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/46&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/87.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/4&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/87&quot;,
+      &quot;created&quot;: &quot;2017-11-30T21:08:32.534Z&quot;
+    },
+    {
+      &quot;id&quot;: 94,
+      &quot;name&quot;: &quot;Diane Sanchez&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (C-137)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Rick&#39;s Memories&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/126&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/94.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/22&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/51&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/94&quot;,
+      &quot;created&quot;: &quot;2017-12-01T11:49:43.929Z&quot;
+    },
+    {
+      &quot;id&quot;: 102,
+      &quot;name&quot;: &quot;Donna Gueterman&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Robot&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Planet Squanch&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/35&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/102.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/21&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/102&quot;,
+      &quot;created&quot;: &quot;2017-12-01T12:21:21.357Z&quot;
+    },
+    {
+      &quot;id&quot;: 116,
+      &quot;name&quot;: &quot;Evil Beth Clone&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Clone&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (C-137)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/116.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/5&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/116&quot;,
+      &quot;created&quot;: &quot;2017-12-26T16:10:47.781Z&quot;
+    },
+    {
+      &quot;id&quot;: 120,
+      &quot;name&quot;: &quot;Evil Summer Clone&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Clone&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (C-137)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/120.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/5&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/120&quot;,
+      &quot;created&quot;: &quot;2017-12-26T16:24:02.059Z&quot;
+    },
+    {
+      &quot;id&quot;: 189,
+      &quot;name&quot;: &quot;Katarina&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/189.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/24&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/189&quot;,
+      &quot;created&quot;: &quot;2017-12-29T19:13:57.070Z&quot;
+    },
+    {
+      &quot;id&quot;: 198,
+      &quot;name&quot;: &quot;Lady Katana&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Humanoid&quot;,
+      &quot;type&quot;: &quot;Cyborg&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Dorian 5&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/29&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/198.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/25&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/198&quot;,
+      &quot;created&quot;: &quot;2017-12-30T12:43:37.571Z&quot;
+    },
+    {
+      &quot;id&quot;: 204,
+      &quot;name&quot;: &quot;Lisa&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Immortality Field Resort&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/7&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/204.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/26&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/204&quot;,
+      &quot;created&quot;: &quot;2017-12-30T12:59:58.460Z&quot;
+    },
+    {
+      &quot;id&quot;: 210,
+      &quot;name&quot;: &quot;Lucy&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/210.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/11&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/210&quot;,
+      &quot;created&quot;: &quot;2017-12-30T14:01:23.319Z&quot;
+    },
+    {
+      &quot;id&quot;: 248,
+      &quot;name&quot;: &quot;Mrs. Refrigerator&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Parasite&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/248.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/15&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/248&quot;,
+      &quot;created&quot;: &quot;2017-12-30T18:12:38.369Z&quot;
+    },
+    {
+      &quot;id&quot;: 250,
+      &quot;name&quot;: &quot;Mrs. Sullivan&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Cat controlled dead lady&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (C-500A)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/23&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Interdimensional Cable&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/6&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/250.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/8&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/250&quot;,
+      &quot;created&quot;: &quot;2017-12-30T18:24:49.372Z&quot;
+    },
+    {
+      &quot;id&quot;: 344,
+      &quot;name&quot;: &quot;Tammy Guetermann&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;NX-5 Planet Remover&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/105&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/344.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/11&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/16&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/21&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/22&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/41&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/344&quot;,
+      &quot;created&quot;: &quot;2018-01-10T17:31:54.889Z&quot;
+    },
+    {
+      &quot;id&quot;: 352,
+      &quot;name&quot;: &quot;Tinkles&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Parasite&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/352.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/15&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/352&quot;,
+      &quot;created&quot;: &quot;2018-01-10T17:58:51.840Z&quot;
+    },
+    {
+      &quot;id&quot;: 386,
+      &quot;name&quot;: &quot;Zarbadar Gloonch&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Drumbloxian&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Nuptia 4&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/13&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/386.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/13&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/18&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/386&quot;,
+      &quot;created&quot;: &quot;2018-01-10T19:52:40.898Z&quot;
+    },
+    {
+      &quot;id&quot;: 513,
+      &quot;name&quot;: &quot;Judge&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/513.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/32&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/513&quot;,
+      &quot;created&quot;: &quot;2020-05-02T12:27:08.223Z&quot;
+    },
+    {
+      &quot;id&quot;: 532,
+      &quot;name&quot;: &quot;Tony\u2019s Wife&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Globaflyn&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/87&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Globaflyn&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/87&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/532.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/33&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/532&quot;,
+      &quot;created&quot;: &quot;2020-05-02T13:45:32.092Z&quot;
+    },
+    {
+      &quot;id&quot;: 596,
+      &quot;name&quot;: &quot;Floaty Non-Gasm Brotherhood Member Friend&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Soulless Puppet&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Tickets Please Guy Nightmare&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/98&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Tickets Please Guy Nightmare&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/98&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/596.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/37&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/596&quot;,
+      &quot;created&quot;: &quot;2020-08-06T11:31:40.334Z&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseStatus == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">TC_007_Validate_Character_by filter female &amp; dead_responseTime</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>336</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {gender:&#39;female&#39;, status:&#39;dead&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/character&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">335</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">14:54:10.454 request:
+1 &gt; GET https://rickandmortyapi.com/api/character?gender=female&amp;status=dead
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:10.787 response time in milliseconds: 246
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:10 GMT
+1 &lt; Etag: W/&quot;2674-w12ETQ+E3qM5KygqyxxhsEtkozA&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:10 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJRKHRM5D31AWVH6R76YN6
+1 &lt; X-Powered-By: Express
+{&quot;info&quot;:{&quot;count&quot;:43,&quot;pages&quot;:3,&quot;next&quot;:&quot;https://rickandmortyapi.com/api/character?page=2&amp;gender=female&amp;status=dead&quot;,&quot;prev&quot;:null},&quot;results&quot;:[{&quot;id&quot;:32,&quot;name&quot;:&quot;Bearded Lady&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/32.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/32&quot;,&quot;created&quot;:&quot;2017-11-05T09:18:04.184Z&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Beth&#39;s Mytholog&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Mythological Creature&quot;,&quot;type&quot;:&quot;Mytholog&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/40.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/40&quot;,&quot;created&quot;:&quot;2017-11-05T10:02:26.701Z&quot;},{&quot;id&quot;:60,&quot;name&quot;:&quot;Calypso&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Superhuman&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/60.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/60&quot;,&quot;created&quot;:&quot;2017-11-05T11:52:45.852Z&quot;},{&quot;id&quot;:87,&quot;name&quot;:&quot;Cynthia&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Zigerion&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Zigerion&#39;s Base&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/46&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/87.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/4&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/87&quot;,&quot;created&quot;:&quot;2017-11-30T21:08:32.534Z&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;Diane Sanchez&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Rick&#39;s Memories&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/126&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/94.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/94&quot;,&quot;created&quot;:&quot;2017-12-01T11:49:43.929Z&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;Donna Gueterman&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Robot&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Planet Squanch&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/35&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/102.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/21&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/102&quot;,&quot;created&quot;:&quot;2017-12-01T12:21:21.357Z&quot;},{&quot;id&quot;:116,&quot;name&quot;:&quot;Evil Beth Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/116.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/116&quot;,&quot;created&quot;:&quot;2017-12-26T16:10:47.781Z&quot;},{&quot;id&quot;:120,&quot;name&quot;:&quot;Evil Summer Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/120.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/120&quot;,&quot;created&quot;:&quot;2017-12-26T16:24:02.059Z&quot;},{&quot;id&quot;:189,&quot;name&quot;:&quot;Katarina&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/189.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/24&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/189&quot;,&quot;created&quot;:&quot;2017-12-29T19:13:57.070Z&quot;},{&quot;id&quot;:198,&quot;name&quot;:&quot;Lady Katana&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Humanoid&quot;,&quot;type&quot;:&quot;Cyborg&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Dorian 5&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/29&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/198.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/198&quot;,&quot;created&quot;:&quot;2017-12-30T12:43:37.571Z&quot;},{&quot;id&quot;:204,&quot;name&quot;:&quot;Lisa&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/7&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/204.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/26&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/204&quot;,&quot;created&quot;:&quot;2017-12-30T12:59:58.460Z&quot;},{&quot;id&quot;:210,&quot;name&quot;:&quot;Lucy&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/210.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/210&quot;,&quot;created&quot;:&quot;2017-12-30T14:01:23.319Z&quot;},{&quot;id&quot;:248,&quot;name&quot;:&quot;Mrs. Refrigerator&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/248.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/248&quot;,&quot;created&quot;:&quot;2017-12-30T18:12:38.369Z&quot;},{&quot;id&quot;:250,&quot;name&quot;:&quot;Mrs. Sullivan&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Cat controlled dead lady&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-500A)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/23&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/6&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/250.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/8&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/250&quot;,&quot;created&quot;:&quot;2017-12-30T18:24:49.372Z&quot;},{&quot;id&quot;:344,&quot;name&quot;:&quot;Tammy Guetermann&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;NX-5 Planet Remover&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/105&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/344.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/344&quot;,&quot;created&quot;:&quot;2018-01-10T17:31:54.889Z&quot;},{&quot;id&quot;:352,&quot;name&quot;:&quot;Tinkles&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/352.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/352&quot;,&quot;created&quot;:&quot;2018-01-10T17:58:51.840Z&quot;},{&quot;id&quot;:386,&quot;name&quot;:&quot;Zarbadar Gloonch&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Drumbloxian&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/386.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/386&quot;,&quot;created&quot;:&quot;2018-01-10T19:52:40.898Z&quot;},{&quot;id&quot;:513,&quot;name&quot;:&quot;Judge&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/513.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/32&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/513&quot;,&quot;created&quot;:&quot;2020-05-02T12:27:08.223Z&quot;},{&quot;id&quot;:532,&quot;name&quot;:&quot;Tony’s Wife&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/532.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/33&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/532&quot;,&quot;created&quot;:&quot;2020-05-02T13:45:32.092Z&quot;},{&quot;id&quot;:596,&quot;name&quot;:&quot;Floaty Non-Gasm Brotherhood Member Friend&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Soulless Puppet&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/596.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/37&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/596&quot;,&quot;created&quot;:&quot;2020-08-06T11:31:40.334Z&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseTime &lt; 1500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:22]</span>
+                <span class="scenario-name">TC_008_Validate_Character_by filter female &amp; dead__responseHeader</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>311</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {gender:&#39;female&#39;, status:&#39;dead&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/character&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">309</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">14:54:10.796 request:
+1 &gt; GET https://rickandmortyapi.com/api/character?gender=female&amp;status=dead
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:11.102 response time in milliseconds: 233
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:11 GMT
+1 &lt; Etag: W/&quot;2674-w12ETQ+E3qM5KygqyxxhsEtkozA&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:10 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJRKW1EFDWSECV4MHD78Y1
+1 &lt; X-Powered-By: Express
+{&quot;info&quot;:{&quot;count&quot;:43,&quot;pages&quot;:3,&quot;next&quot;:&quot;https://rickandmortyapi.com/api/character?page=2&amp;gender=female&amp;status=dead&quot;,&quot;prev&quot;:null},&quot;results&quot;:[{&quot;id&quot;:32,&quot;name&quot;:&quot;Bearded Lady&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/32.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/32&quot;,&quot;created&quot;:&quot;2017-11-05T09:18:04.184Z&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Beth&#39;s Mytholog&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Mythological Creature&quot;,&quot;type&quot;:&quot;Mytholog&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/40.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/40&quot;,&quot;created&quot;:&quot;2017-11-05T10:02:26.701Z&quot;},{&quot;id&quot;:60,&quot;name&quot;:&quot;Calypso&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Superhuman&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/60.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/60&quot;,&quot;created&quot;:&quot;2017-11-05T11:52:45.852Z&quot;},{&quot;id&quot;:87,&quot;name&quot;:&quot;Cynthia&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Zigerion&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Zigerion&#39;s Base&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/46&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/87.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/4&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/87&quot;,&quot;created&quot;:&quot;2017-11-30T21:08:32.534Z&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;Diane Sanchez&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Rick&#39;s Memories&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/126&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/94.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/94&quot;,&quot;created&quot;:&quot;2017-12-01T11:49:43.929Z&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;Donna Gueterman&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Robot&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Planet Squanch&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/35&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/102.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/21&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/102&quot;,&quot;created&quot;:&quot;2017-12-01T12:21:21.357Z&quot;},{&quot;id&quot;:116,&quot;name&quot;:&quot;Evil Beth Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/116.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/116&quot;,&quot;created&quot;:&quot;2017-12-26T16:10:47.781Z&quot;},{&quot;id&quot;:120,&quot;name&quot;:&quot;Evil Summer Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/120.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/120&quot;,&quot;created&quot;:&quot;2017-12-26T16:24:02.059Z&quot;},{&quot;id&quot;:189,&quot;name&quot;:&quot;Katarina&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/189.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/24&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/189&quot;,&quot;created&quot;:&quot;2017-12-29T19:13:57.070Z&quot;},{&quot;id&quot;:198,&quot;name&quot;:&quot;Lady Katana&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Humanoid&quot;,&quot;type&quot;:&quot;Cyborg&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Dorian 5&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/29&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/198.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/198&quot;,&quot;created&quot;:&quot;2017-12-30T12:43:37.571Z&quot;},{&quot;id&quot;:204,&quot;name&quot;:&quot;Lisa&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/7&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/204.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/26&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/204&quot;,&quot;created&quot;:&quot;2017-12-30T12:59:58.460Z&quot;},{&quot;id&quot;:210,&quot;name&quot;:&quot;Lucy&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/210.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/210&quot;,&quot;created&quot;:&quot;2017-12-30T14:01:23.319Z&quot;},{&quot;id&quot;:248,&quot;name&quot;:&quot;Mrs. Refrigerator&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/248.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/248&quot;,&quot;created&quot;:&quot;2017-12-30T18:12:38.369Z&quot;},{&quot;id&quot;:250,&quot;name&quot;:&quot;Mrs. Sullivan&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Cat controlled dead lady&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-500A)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/23&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/6&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/250.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/8&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/250&quot;,&quot;created&quot;:&quot;2017-12-30T18:24:49.372Z&quot;},{&quot;id&quot;:344,&quot;name&quot;:&quot;Tammy Guetermann&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;NX-5 Planet Remover&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/105&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/344.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/344&quot;,&quot;created&quot;:&quot;2018-01-10T17:31:54.889Z&quot;},{&quot;id&quot;:352,&quot;name&quot;:&quot;Tinkles&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/352.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/352&quot;,&quot;created&quot;:&quot;2018-01-10T17:58:51.840Z&quot;},{&quot;id&quot;:386,&quot;name&quot;:&quot;Zarbadar Gloonch&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Drumbloxian&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/386.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/386&quot;,&quot;created&quot;:&quot;2018-01-10T19:52:40.898Z&quot;},{&quot;id&quot;:513,&quot;name&quot;:&quot;Judge&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/513.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/32&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/513&quot;,&quot;created&quot;:&quot;2020-05-02T12:27:08.223Z&quot;},{&quot;id&quot;:532,&quot;name&quot;:&quot;Tony’s Wife&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/532.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/33&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/532&quot;,&quot;created&quot;:&quot;2020-05-02T13:45:32.092Z&quot;},{&quot;id&quot;:596,&quot;name&quot;:&quot;Floaty Non-Gasm Brotherhood Member Friend&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Soulless Puppet&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/596.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/37&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/596&quot;,&quot;created&quot;:&quot;2020-08-06T11:31:40.334Z&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match karate.response.header(&#39;content-type&#39;) == &#39;application/json; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match karate.response.header(&#39;Vary&#39;) == &#39;Accept-Encoding&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:30]</span>
+                <span class="scenario-name">TC_009_Validate_Character_by filter female &amp; dead_Response Payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>307</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://rickandmortyapi.com/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {gender:&#39;female&#39;, status:&#39;dead&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/character&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def reqBody = read(&quot;data.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print reqBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">14:54:11.123 [print] {
+  &quot;info&quot;: {
+    &quot;count&quot;: 43,
+    &quot;pages&quot;: 3,
+    &quot;next&quot;: &quot;https://rickandmortyapi.com/api/character?page=2&amp;gender=female&amp;status=dead&quot;,
+    &quot;prev&quot;: null
+  },
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: 32,
+      &quot;name&quot;: &quot;Bearded Lady&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Parasite&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/32.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/15&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/32&quot;,
+      &quot;created&quot;: &quot;2017-11-05T09:18:04.184Z&quot;
+    },
+    {
+      &quot;id&quot;: 40,
+      &quot;name&quot;: &quot;Beth&#39;s Mytholog&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Mythological Creature&quot;,
+      &quot;type&quot;: &quot;Mytholog&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Nuptia 4&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/13&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Nuptia 4&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/13&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/40.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/18&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/40&quot;,
+      &quot;created&quot;: &quot;2017-11-05T10:02:26.701Z&quot;
+    },
+    {
+      &quot;id&quot;: 60,
+      &quot;name&quot;: &quot;Calypso&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Superhuman&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/60.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/25&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/60&quot;,
+      &quot;created&quot;: &quot;2017-11-05T11:52:45.852Z&quot;
+    },
+    {
+      &quot;id&quot;: 87,
+      &quot;name&quot;: &quot;Cynthia&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Zigerion&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Zigerion&#39;s Base&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/46&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/87.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/4&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/87&quot;,
+      &quot;created&quot;: &quot;2017-11-30T21:08:32.534Z&quot;
+    },
+    {
+      &quot;id&quot;: 94,
+      &quot;name&quot;: &quot;Diane Sanchez&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (C-137)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Rick&#39;s Memories&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/126&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/94.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/22&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/51&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/94&quot;,
+      &quot;created&quot;: &quot;2017-12-01T11:49:43.929Z&quot;
+    },
+    {
+      &quot;id&quot;: 102,
+      &quot;name&quot;: &quot;Donna Gueterman&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Robot&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Planet Squanch&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/35&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/102.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/21&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/102&quot;,
+      &quot;created&quot;: &quot;2017-12-01T12:21:21.357Z&quot;
+    },
+    {
+      &quot;id&quot;: 116,
+      &quot;name&quot;: &quot;Evil Beth Clone&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Clone&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (C-137)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/116.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/5&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/116&quot;,
+      &quot;created&quot;: &quot;2017-12-26T16:10:47.781Z&quot;
+    },
+    {
+      &quot;id&quot;: 120,
+      &quot;name&quot;: &quot;Evil Summer Clone&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Clone&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (C-137)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/1&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/120.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/5&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/120&quot;,
+      &quot;created&quot;: &quot;2017-12-26T16:24:02.059Z&quot;
+    },
+    {
+      &quot;id&quot;: 189,
+      &quot;name&quot;: &quot;Katarina&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/189.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/24&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/189&quot;,
+      &quot;created&quot;: &quot;2017-12-29T19:13:57.070Z&quot;
+    },
+    {
+      &quot;id&quot;: 198,
+      &quot;name&quot;: &quot;Lady Katana&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Humanoid&quot;,
+      &quot;type&quot;: &quot;Cyborg&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Dorian 5&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/29&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/198.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/25&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/198&quot;,
+      &quot;created&quot;: &quot;2017-12-30T12:43:37.571Z&quot;
+    },
+    {
+      &quot;id&quot;: 204,
+      &quot;name&quot;: &quot;Lisa&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Immortality Field Resort&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/7&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/204.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/26&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/204&quot;,
+      &quot;created&quot;: &quot;2017-12-30T12:59:58.460Z&quot;
+    },
+    {
+      &quot;id&quot;: 210,
+      &quot;name&quot;: &quot;Lucy&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/210.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/11&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/210&quot;,
+      &quot;created&quot;: &quot;2017-12-30T14:01:23.319Z&quot;
+    },
+    {
+      &quot;id&quot;: 248,
+      &quot;name&quot;: &quot;Mrs. Refrigerator&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Parasite&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/248.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/15&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/248&quot;,
+      &quot;created&quot;: &quot;2017-12-30T18:12:38.369Z&quot;
+    },
+    {
+      &quot;id&quot;: 250,
+      &quot;name&quot;: &quot;Mrs. Sullivan&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;Cat controlled dead lady&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (C-500A)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/23&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Interdimensional Cable&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/6&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/250.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/8&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/250&quot;,
+      &quot;created&quot;: &quot;2017-12-30T18:24:49.372Z&quot;
+    },
+    {
+      &quot;id&quot;: 344,
+      &quot;name&quot;: &quot;Tammy Guetermann&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;NX-5 Planet Remover&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/105&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/344.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/11&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/16&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/21&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/22&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/41&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/344&quot;,
+      &quot;created&quot;: &quot;2018-01-10T17:31:54.889Z&quot;
+    },
+    {
+      &quot;id&quot;: 352,
+      &quot;name&quot;: &quot;Tinkles&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Parasite&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/352.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/15&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/352&quot;,
+      &quot;created&quot;: &quot;2018-01-10T17:58:51.840Z&quot;
+    },
+    {
+      &quot;id&quot;: 386,
+      &quot;name&quot;: &quot;Zarbadar Gloonch&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Drumbloxian&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;unknown&quot;,
+        &quot;url&quot;: &quot;&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Nuptia 4&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/13&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/386.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/13&quot;,
+        &quot;https://rickandmortyapi.com/api/episode/18&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/386&quot;,
+      &quot;created&quot;: &quot;2018-01-10T19:52:40.898Z&quot;
+    },
+    {
+      &quot;id&quot;: 513,
+      &quot;name&quot;: &quot;Judge&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Human&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Earth (Replacement Dimension)&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/20&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/513.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/32&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/513&quot;,
+      &quot;created&quot;: &quot;2020-05-02T12:27:08.223Z&quot;
+    },
+    {
+      &quot;id&quot;: 532,
+      &quot;name&quot;: &quot;Tony\u2019s Wife&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Globaflyn&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/87&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Globaflyn&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/87&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/532.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/33&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/532&quot;,
+      &quot;created&quot;: &quot;2020-05-02T13:45:32.092Z&quot;
+    },
+    {
+      &quot;id&quot;: 596,
+      &quot;name&quot;: &quot;Floaty Non-Gasm Brotherhood Member Friend&quot;,
+      &quot;status&quot;: &quot;Dead&quot;,
+      &quot;species&quot;: &quot;Alien&quot;,
+      &quot;type&quot;: &quot;Soulless Puppet&quot;,
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;origin&quot;: {
+        &quot;name&quot;: &quot;Tickets Please Guy Nightmare&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/98&quot;
+      },
+      &quot;location&quot;: {
+        &quot;name&quot;: &quot;Tickets Please Guy Nightmare&quot;,
+        &quot;url&quot;: &quot;https://rickandmortyapi.com/api/location/98&quot;
+      },
+      &quot;image&quot;: &quot;https://rickandmortyapi.com/api/character/avatar/596.jpeg&quot;,
+      &quot;episode&quot;: [
+        &quot;https://rickandmortyapi.com/api/episode/37&quot;
+      ],
+      &quot;url&quot;: &quot;https://rickandmortyapi.com/api/character/596&quot;,
+      &quot;created&quot;: &quot;2020-08-06T11:31:40.334Z&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">289</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">14:54:11.126 request:
+1 &gt; GET https://rickandmortyapi.com/api/character?gender=female&amp;status=dead
+1 &gt; Host: rickandmortyapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:54:11.411 response time in milliseconds: 217
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1
+1 &lt; Cache-Control: max-age=259200
+1 &lt; Cache-Control: public
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 12 Jun 2023 19:54:11 GMT
+1 &lt; Etag: W/&quot;2674-w12ETQ+E3qM5KygqyxxhsEtkozA&quot;
+1 &lt; Expires: Thu, 15 Jun 2023 19:54:10 GMT
+1 &lt; Server: Netlify
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Nf-Request-Id: 01H2RJRM5WG0KW51K46JKHTM1B
+1 &lt; X-Powered-By: Express
+{&quot;info&quot;:{&quot;count&quot;:43,&quot;pages&quot;:3,&quot;next&quot;:&quot;https://rickandmortyapi.com/api/character?page=2&amp;gender=female&amp;status=dead&quot;,&quot;prev&quot;:null},&quot;results&quot;:[{&quot;id&quot;:32,&quot;name&quot;:&quot;Bearded Lady&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/32.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/32&quot;,&quot;created&quot;:&quot;2017-11-05T09:18:04.184Z&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Beth&#39;s Mytholog&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Mythological Creature&quot;,&quot;type&quot;:&quot;Mytholog&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/40.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/40&quot;,&quot;created&quot;:&quot;2017-11-05T10:02:26.701Z&quot;},{&quot;id&quot;:60,&quot;name&quot;:&quot;Calypso&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Superhuman&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/60.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/60&quot;,&quot;created&quot;:&quot;2017-11-05T11:52:45.852Z&quot;},{&quot;id&quot;:87,&quot;name&quot;:&quot;Cynthia&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Zigerion&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Zigerion&#39;s Base&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/46&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/87.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/4&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/87&quot;,&quot;created&quot;:&quot;2017-11-30T21:08:32.534Z&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;Diane Sanchez&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Rick&#39;s Memories&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/126&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/94.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/51&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/94&quot;,&quot;created&quot;:&quot;2017-12-01T11:49:43.929Z&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;Donna Gueterman&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Robot&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Planet Squanch&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/35&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/102.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/21&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/102&quot;,&quot;created&quot;:&quot;2017-12-01T12:21:21.357Z&quot;},{&quot;id&quot;:116,&quot;name&quot;:&quot;Evil Beth Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/116.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/116&quot;,&quot;created&quot;:&quot;2017-12-26T16:10:47.781Z&quot;},{&quot;id&quot;:120,&quot;name&quot;:&quot;Evil Summer Clone&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Clone&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/120.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/5&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/120&quot;,&quot;created&quot;:&quot;2017-12-26T16:24:02.059Z&quot;},{&quot;id&quot;:189,&quot;name&quot;:&quot;Katarina&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/189.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/24&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/189&quot;,&quot;created&quot;:&quot;2017-12-29T19:13:57.070Z&quot;},{&quot;id&quot;:198,&quot;name&quot;:&quot;Lady Katana&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Humanoid&quot;,&quot;type&quot;:&quot;Cyborg&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Dorian 5&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/29&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/198.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/25&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/198&quot;,&quot;created&quot;:&quot;2017-12-30T12:43:37.571Z&quot;},{&quot;id&quot;:204,&quot;name&quot;:&quot;Lisa&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Immortality Field Resort&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/7&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/204.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/26&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/204&quot;,&quot;created&quot;:&quot;2017-12-30T12:59:58.460Z&quot;},{&quot;id&quot;:210,&quot;name&quot;:&quot;Lucy&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/210.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/210&quot;,&quot;created&quot;:&quot;2017-12-30T14:01:23.319Z&quot;},{&quot;id&quot;:248,&quot;name&quot;:&quot;Mrs. Refrigerator&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/248.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/248&quot;,&quot;created&quot;:&quot;2017-12-30T18:12:38.369Z&quot;},{&quot;id&quot;:250,&quot;name&quot;:&quot;Mrs. Sullivan&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;Cat controlled dead lady&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-500A)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/23&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Interdimensional Cable&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/6&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/250.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/8&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/250&quot;,&quot;created&quot;:&quot;2017-12-30T18:24:49.372Z&quot;},{&quot;id&quot;:344,&quot;name&quot;:&quot;Tammy Guetermann&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;NX-5 Planet Remover&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/105&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/344.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/344&quot;,&quot;created&quot;:&quot;2018-01-10T17:31:54.889Z&quot;},{&quot;id&quot;:352,&quot;name&quot;:&quot;Tinkles&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Parasite&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/352.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/15&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/352&quot;,&quot;created&quot;:&quot;2018-01-10T17:58:51.840Z&quot;},{&quot;id&quot;:386,&quot;name&quot;:&quot;Zarbadar Gloonch&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Drumbloxian&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;unknown&quot;,&quot;url&quot;:&quot;&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Nuptia 4&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/13&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/386.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/386&quot;,&quot;created&quot;:&quot;2018-01-10T19:52:40.898Z&quot;},{&quot;id&quot;:513,&quot;name&quot;:&quot;Judge&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/513.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/32&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/513&quot;,&quot;created&quot;:&quot;2020-05-02T12:27:08.223Z&quot;},{&quot;id&quot;:532,&quot;name&quot;:&quot;Tony’s Wife&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Globaflyn&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/87&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/532.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/33&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/532&quot;,&quot;created&quot;:&quot;2020-05-02T13:45:32.092Z&quot;},{&quot;id&quot;:596,&quot;name&quot;:&quot;Floaty Non-Gasm Brotherhood Member Friend&quot;,&quot;status&quot;:&quot;Dead&quot;,&quot;species&quot;:&quot;Alien&quot;,&quot;type&quot;:&quot;Soulless Puppet&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Tickets Please Guy Nightmare&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/98&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/596.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/37&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/596&quot;,&quot;created&quot;:&quot;2020-08-06T11:31:40.334Z&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $ == reqBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.info != null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.results[0].name == &#39;Bearded Lady&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
